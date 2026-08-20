@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Services | Affan Vibes</title>
+<meta name="description" content="Affan Vibes — AV Management, creator bookings, schedule and products.">
+<style>
+:root{--bg:#050505;--panel:#10100e;--gold:#e8aa2f;--gold2:#ffd86e;--muted:#aaa79f;--line:#3c2b12;--green:#63dfa0;--red:#ff8585}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0,#201505,transparent 30%),var(--bg);color:#fff;font-family:Arial,sans-serif}.wrap{width:min(1180px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:#050505ed;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav{height:74px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;font-weight:900}.brand img{width:62px;height:50px;object-fit:contain}.brand small{display:block;color:var(--gold);font-size:9px;letter-spacing:2px}.links{display:flex;gap:22px}.links a{color:#bbb;text-decoration:none;font-size:13px}.links a:hover{color:var(--gold2)}
+.btn{display:inline-block;border:0;border-radius:9px;padding:13px 18px;background:linear-gradient(135deg,var(--gold2),var(--gold));color:#080704;text-decoration:none;font-weight:900;font-size:13px;cursor:pointer}.ghost{display:inline-block;border:1px solid var(--line);border-radius:9px;padding:12px 17px;color:#fff;text-decoration:none;font-weight:700;font-size:13px}
+.hero{min-height:640px;display:grid;grid-template-columns:1.08fr .92fr;gap:45px;align-items:center}.kicker{color:var(--gold2);font-weight:900;letter-spacing:3px;font-size:12px}.hero h1{font:700 clamp(48px,7vw,84px)/.95 Georgia,serif;letter-spacing:-3px;margin:18px 0}.hero h1 span{color:var(--gold2)}.hero p{color:var(--muted);font-size:18px;line-height:1.7;max-width:610px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.hero-card{border:1px solid var(--line);border-radius:23px;padding:18px;background:#0c0b09}.hero-card img{width:100%;height:380px;object-fit:contain;background:#000;border-radius:15px}
+section{padding:72px 0}h2{font:700 38px Georgia,serif;margin:0 0 8px}.sub{color:#999;margin:0 0 28px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card,.box{border:1px solid var(--line);border-radius:16px;background:#0e0e0c;padding:23px}.num{color:var(--gold);font-weight:900;letter-spacing:2px}.card h3{margin:12px 0 8px}.card p{color:#999;line-height:1.6;font-size:13px}
+.schedule{display:grid;grid-template-columns:1fr 1fr;gap:12px}.slot{padding:17px;border:1px solid var(--line);border-radius:12px;background:#0e0e0c;display:flex;justify-content:space-between;align-items:center}.slot span{font-size:12px;color:var(--green)}.slot.booked span{color:var(--red)}.edit-note{color:#777;font-size:12px;margin-top:12px}
+.calendar{padding:20px;border:1px solid var(--line);border-radius:17px;background:#0d0d0c}.cal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:7px}.cal-cell{min-height:72px;padding:8px;border-radius:9px;background:#111;color:#aaa;font-size:11px;border:1px solid transparent}.cal-cell strong{display:block;color:#fff;font-size:15px}.cal-cell.available{border-color:#28533d;color:var(--green)}.cal-cell.booked{border-color:#5a2424;color:var(--red);background:#1c1011}.cal-cell.today{box-shadow:0 0 0 1px var(--gold2) inset}.cal-controls{display:flex;gap:8px;align-items:center}.cal-controls button,.smallbtn{border:1px solid var(--line);background:#111;color:#fff;border-radius:7px;padding:8px 11px;cursor:pointer}.admin{margin-top:16px;padding:16px;border:1px dashed #4a381c;border-radius:12px;background:#0b0b09}.admin summary{cursor:pointer;color:var(--gold2);font-weight:bold}.admin-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.admin-row{display:flex;gap:8px;align-items:center}.admin-row input,.admin-row select{flex:1}
+.booking{display:grid;grid-template-columns:.7fr 1.3fr;gap:16px}label{display:block;font-size:12px;color:#bbb;font-weight:bold;margin:12px 0 6px}input,select,textarea{width:100%;padding:12px;background:#070707;color:#fff;border:1px solid var(--line);border-radius:8px}textarea{min-height:105px;resize:vertical}.submit{width:100%;margin-top:15px}.notice{padding:12px;border-radius:9px;background:#17120a;color:#d9c7a3;font-size:12px;line-height:1.5}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.product{overflow:hidden;border:1px solid var(--line);border-radius:16px;background:#0e0e0c}.prod-img{height:190px;background:linear-gradient(135deg,#211806,#080808);display:grid;place-items:center;font-size:65px}.prod-info{padding:18px}.price{color:var(--gold2);font-weight:900;margin:10px 0}.product a{margin-right:7px}
+.contact{text-align:center;border:1px solid #5b411a;border-radius:21px;padding:48px 20px;background:radial-gradient(circle,#201607,#080808 65%)}.contact p{color:#aaa;max-width:620px;margin:10px auto 25px;line-height:1.6}.contact-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+footer{border-top:1px solid var(--line);padding:28px 0;color:#777;font-size:12px}.foot{display:flex;justify-content:space-between}
+@media(max-width:820px){.links{display:none}.hero,.booking{grid-template-columns:1fr}.grid,.products{grid-template-columns:1fr}.schedule{grid-template-columns:1fr}.admin-grid{grid-template-columns:1fr}.hero-card img{height:300px}.cal-grid{min-width:650px}.calendar{overflow:auto}}
+
+.hero-banner{width:100%;background:#050505;border-bottom:1px solid #3c2b12;overflow:hidden}
+.hero-banner img{display:block;width:100%;height:auto;max-height:680px;object-fit:cover}
+@media(max-width:700px){.hero-banner img{min-height:220px;object-fit:cover}}
+
+#cartCount{display:inline-grid;place-items:center;min-width:18px;height:18px;padding:0 5px;border-radius:20px;background:var(--gold);color:#080704;font-size:10px;font-weight:900;margin-left:3px}
+.cart-box{border:1px solid var(--line);border-radius:17px;background:#0e0e0c;padding:25px;text-align:center}
+.cart-empty{color:#999;line-height:1.7}
+
+/* ================= PRODUCT STORE LIGHT THEME ================= */
+#products{background:#f7f9fc;color:#172033}
+#products .wrap{width:min(1180px,92%)}
+#products h2{color:#172033}
+#products .sub{color:#687386}
+.product-store{background:#fff;border:1px solid #e5e9ef;border-radius:20px;padding:22px;box-shadow:0 8px 30px rgba(20,30,45,.06)}
+.product-categories{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:16px}
+.product-filter-btn{border:1px solid #dce2ea;background:#fff;color:#172033;border-radius:10px;padding:10px 15px;font-weight:700;cursor:pointer}
+.product-filter-btn.active{background:#172033;color:#fff;border-color:#172033}
+.product-filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.product-filters select{background:#fff;color:#172033;border:1px solid #dce2ea;border-radius:10px;padding:11px 13px;min-width:190px}
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.store-product{border:1px solid #e5e9ef;border-radius:16px;overflow:hidden;background:#fff}
+.store-product-image{height:210px;background:linear-gradient(135deg,#eef2f6,#fff);display:grid;place-items:center;color:#9aa3af;font-size:54px}
+.store-product-image img{width:100%;height:100%;object-fit:cover}
+.store-product-info{padding:17px}
+.store-product-meta{font-size:12px;color:#748094;margin-bottom:7px}
+.store-product-name{font-weight:800;font-size:18px;color:#172033}
+.store-product-price{font-weight:900;font-size:20px;color:#172033;margin:9px 0 13px}
+.store-order{width:100%;border:0;border-radius:9px;padding:11px;background:#172033;color:#fff;font-weight:800;cursor:pointer}
+.store-empty{grid-column:1/-1;text-align:center;padding:58px 20px;border:1px dashed #cfd6df;border-radius:16px;color:#687386;background:#fbfcfe}
+.checkout-modal{position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.72);display:none;align-items:flex-start;justify-content:center;padding:28px 14px;overflow:auto}
+.checkout-modal.open{display:flex}
+.checkout-card{width:min(1050px,100%);background:#fff;color:#172033;border-radius:20px;box-shadow:0 20px 70px rgba(0,0,0,.3);overflow:hidden}
+.checkout-head{padding:20px 24px;border-bottom:1px solid #e5e9ef;display:flex;justify-content:space-between;align-items:center}
+.checkout-head h2{font:700 28px Georgia,serif;margin:0;color:#172033}
+.checkout-close{border:0;background:#eef1f5;color:#172033;border-radius:9px;padding:9px 12px;cursor:pointer;font-weight:800}
+.checkout-body{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;padding:24px}
+.checkout-box{border:1px solid #e5e9ef;border-radius:16px;padding:18px;background:#fff}
+.checkout-box h3{margin:0 0 12px;color:#172033}
+.checkout-label{display:block;font-size:12px;font-weight:800;color:#526075;margin:12px 0 6px}
+.checkout-input,.checkout-textarea,.checkout-select{width:100%;padding:12px;border:1px solid #d7dde6;border-radius:9px;background:#fff;color:#172033}
+.checkout-textarea{min-height:90px;resize:vertical}
+.order-line{display:flex;gap:13px;align-items:center;padding-bottom:15px;border-bottom:1px solid #e8ebf0;margin-bottom:15px}
+.order-line-image{width:72px;height:72px;border-radius:10px;background:#f0f3f7;display:grid;place-items:center;font-size:28px;overflow:hidden;flex:0 0 auto}
+.order-line-image img{width:100%;height:100%;object-fit:cover}
+.order-line-info{flex:1}.order-line-name{font-weight:800}.order-line-price{color:#657184;font-size:13px;margin-top:4px}
+.qty-control{display:flex;align-items:center;gap:9px;margin-top:8px}.qty-control button{border:1px solid #d7dde6;background:#fff;border-radius:7px;width:30px;height:30px;cursor:pointer;font-weight:900}.qty-value{min-width:22px;text-align:center;font-weight:800}
+.summary-row{display:flex;justify-content:space-between;gap:15px;padding:8px 0;color:#526075}.summary-row.total{border-top:1px solid #e5e9ef;margin-top:8px;padding-top:14px;color:#172033;font-weight:900;font-size:18px}
+.payment-option{display:flex;gap:9px;align-items:center;padding:11px;border:1px solid #dce2ea;border-radius:9px;margin-top:8px;cursor:pointer}.payment-option input{width:auto}
+.checkout-submit{width:100%;margin-top:15px;border:0;border-radius:10px;padding:13px;background:#172033;color:#fff;font-weight:900;cursor:pointer}
+.checkout-success{display:none;text-align:center;padding:45px 25px}.checkout-success.open{display:block}.checkout-success h2{color:#172033;margin-bottom:10px}.checkout-success p{color:#687386;line-height:1.6}
+.checkout-form-wrap.hidden,.checkout-summary-wrap.hidden{display:none}
+@media(max-width:820px){.product-grid{grid-template-columns:1fr}.checkout-body{grid-template-columns:1fr}}
+
+
+
+.site-banner{width:100%;max-height:430px;object-fit:cover;border-radius:18px;border:1px solid var(--line);margin:24px 0 10px}
+.page-head{padding:46px 0 18px}.page-head h1{font:700 clamp(42px,6vw,72px)/1 Georgia,serif;margin:0 0 10px}.page-head p{color:var(--muted);font-size:17px;line-height:1.7}
+.page-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.card-link{border:1px solid var(--line);background:#0c0b09;border-radius:14px;padding:18px;color:#fff;text-decoration:none}
+.card-link strong{display:block;color:var(--gold2);margin-bottom:5px}
+.footer-note{padding:35px 0 55px;color:#777;text-align:center;font-size:12px}
+
+</style>
+</head><body>
+
+<nav><div class="wrap nav">
+<a class="brand" href="index.html">
+<img src="assets/brand0.png" alt="Affan Vibes logo">
+<span>AV MANAGEMENT<small>Services</small></span>
+</a>
+<div class="links"><a href="index.html">Home</a><a href="services.html">Services</a><a href="schedule.html">Schedule</a></div>
+</div></nav>
+<main><div class="wrap">
+<img class="site-banner" src="assets/brand1.png" alt="Affan Vibes services banner">
+<section id="services"><div class="wrap"><h2>Services We Offer</h2><p class="sub">Everything needed for professional creator bookings.</p>
+<div class="grid">
+<div class="card"><div class="num">01</div><h3>Event Booking</h3><p>Book me for events, shows, launches, meetups and appearances.</p></div>
+<div class="card"><div class="num">02</div><h3>Brand Collaborations</h3><p>Creator campaigns, sponsored content and brand partnerships.</p></div>
+<div class="card"><div class="num">03</div><h3>PR &amp; Promotions</h3><p>Promote your brand, business, product or campaign.</p></div>
+<div class="card"><div class="num">04</div><h3>Daily / Weekly Availability</h3><p>Check open days and time windows before requesting.</p></div>
+<div class="card"><div class="num">05</div><h3>Specific Date + Time</h3><p>Request an exact date and preferred time slot.</p></div>
+<div class="card"><div class="num">06</div><h3>Travel Locations</h3><p>Include your event location and travel requirements.</p></div>
+</div></div></section>
+<div class="page-links"><a class="btn" href="schedule.html">GO TO SCHEDULE</a></div>
+</div></main>
+<footer class="footer-note">© 2026 Affan Vibes • AV Management & Products</footer>
+<script></script>
+</body></html>
